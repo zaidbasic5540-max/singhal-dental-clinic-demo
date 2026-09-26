@@ -1,0 +1,181 @@
+/* ==========================================================================
+   DR SIDDHARTHA'S DENTAL CARE - CUSTOM CLINICAL DESIGN SYSTEM
+   Soft, reassuring, modern healthcare aesthetic.
+   Primary Colors: Calming Ocean Blue & Soft Teal.
+   Typography: Inter / Outfit via Google Fonts.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Color Palette - Soft Clinical & Trustworthy */
+  --color-brand-primary: #0284c7;       /* Medical Ocean Blue */
+  --color-brand-primary-hover: #0369a1; /* Deep Ocean Blue */
+  --color-brand-teal: #0d9488;          /* Soft Healing Teal */
+  --color-brand-teal-light: #f0fdf4;    /* Light Teal Background Accent */
+  
+  --color-bg-base: #f8fafc;             /* Off-white slate background */
+  --color-bg-card: #ffffff;             /* Crisp White Card background */
+  --color-bg-soft: #f1f5f9;             /* Soft neutral divider background */
+  
+  --color-text-main: #0f172a;           /* Dark slate text - WCAG AA compliant */
+  --color-text-muted: #475569;          /* Medium slate secondary text */
+  --color-text-light: #64748b;          /* Soft gray helper text */
+  
+  --color-border: #e2e8f0;              /* Subtle card border */
+  --color-border-accent: #cbd5e1;       /* Focus border */
+
+  --shadow-soft: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 12px 28px -4px rgba(2, 132, 199, 0.12);
+}
+
+/* Base Body Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-base);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: #0f172a;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+/* Accessible Focus Ring for Keyboard Users (WCAG AA) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-brand-primary);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.2);
+}
+
+/* Skip Navigation Link for Accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--color-brand-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  z-index: 9999;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* Mobile Drawer Overlay */
+.mobile-menu-backdrop {
+  background-color: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+/* Photo Placeholder Card (Rule #5: Explicitly labeled [Photo coming soon]) */
+.photo-placeholder-box {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+/* Placeholder Badge Styling for Data verification */
+.placeholder-tag {
+  display: inline-block;
+  background-color: #fffbeeb0;
+  border: 1px solid #fde68a;
+  color: #b45309;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.375rem;
+  font-family: monospace;
+}
+
+/* Custom Card Elevate Animation */
+.card-hover-effect {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Patient Review Pull-quote Styling */
+.pull-quote-badge {
+  background: linear-gradient(90deg, #e0f2fe 0%, #f0f9ff 100%);
+  border-left: 4px solid var(--color-brand-primary);
+  color: #0369a1;
+  font-weight: 600;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  font-size: 0.925rem;
+}
+
+/* Form Styles */
+.form-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #0f172a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  outline: none;
+}
+
+/* Rating Stars */
+.star-rating {
+  color: #f59e0b;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+}
