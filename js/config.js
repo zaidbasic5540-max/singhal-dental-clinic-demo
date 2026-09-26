@@ -40,7 +40,6 @@ const CLINIC_CONFIG = {
   // Business Reputation
   reputation: {
     googleRating: 5.0,
-    reviewCount: 414,
     ratingSource: "Google Reviews",
     wheelchairAccessible: true
   },
