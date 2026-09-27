@@ -1,52 +1,55 @@
 /**
- * DR SIDDHARTHA'S DENTAL CARE - CENTRAL CONFIGURATION & DATA TEMPLATE
+ * DR MEGHA GUPTA DENTIST - CENTRAL CONFIGURATION & DATA TEMPLATE
  * 
  * This file contains all business information, confirmed services, patient reviews,
- * and clinic schedules. When reusing this codebase as a template for another dental clinic,
- * simply update the structured configuration values below.
+ * and clinic schedules.
  * 
  * NOTE: Medical & business facts must be strictly verified before updating.
  */
 
 const CLINIC_CONFIG = {
   // Business Metadata
-  name: "Dr Siddhartha's Dental Care",
+  name: "Dr Megha Gupta Dentist",
   type: "Dental Clinic",
-  tagline: "Gentle, Trusted Dental Care in Jhansi",
+  tagline: "Gentle, Trusted Dental & Orthodontic Care in Jhansi",
   
   // Doctor Information
   doctor: {
-    name: "Dr. Siddhartha",
+    name: "Dr. Megha Gupta",
     qualifications: "[PLACEHOLDER — Doctor's degrees to be confirmed with clinic]",
     yearsOfExperience: "[PLACEHOLDER — Years of practice to be confirmed with clinic]",
     registrationNumber: "[PLACEHOLDER — Medical registration number to be confirmed]",
-    specialties: ["Root Canal Treatment (RCT)", "Re-RCT", "Wisdom Tooth Extraction", "Dental Crowns & Capping"]
+    specialties: ["Root Canal Treatment (RCT)", "Orthodontics & Braces", "Wisdom Teeth Extraction", "Dental Crowns & Capping"]
   },
 
   // Contact & Location Details
   contact: {
-    address: "Abott market road, Orchha Gate Bahar, near Badi Kalimai Mata Mandir, Sant Kabeer Public School, Khushipura, Jhansi, Uttar Pradesh 284002",
+    address: "Sundar complex, and 2, opposite to MLBMC Gate number 1 Road, near kamla hospital, Bundelkhand University, Jhansi, Uttar Pradesh 284128",
     city: "Jhansi",
     state: "Uttar Pradesh",
-    pincode: "284002",
-    phoneDisplay: "099680 93949",
-    phoneRaw: "09968093949",
-    whatsapp: "09968093949", // Clean numeric format for tel/whatsapp links
+    pincode: "284128",
+    phoneDisplay: "099818 11345",
+    phoneRaw: "09981811345",
+    whatsapp: "09981811345",
     email: "[PLACEHOLDER — Clinic email address to be confirmed]",
-    googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8396262963384!2d78.5702!3d25.4484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI2JzU0LjIiTiA3OMKwMzQnMTIuNyJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-    googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Dr+Siddhartha's+Dental+Care+Abott+market+road+Jhansi+Uttar+Pradesh+284002"
+    plusCode: "FJ58+C7 Jhansi, Uttar Pradesh",
+    website: "https://instagram.com",
+    googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.5!2d78.58!3d25.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI2JzAwLjAiTiA3OMKwMzUnMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    googleMapsDirectionsUrl: "https://www.google.com/maps/search/?api=1&query=Dr+Megha+Gupta+Dentist+Sundar+complex+near+kamla+hospital+Bundelkhand+University+Jhansi+Uttar+Pradesh+284128"
   },
 
   // Business Reputation
   reputation: {
-    googleRating: 5.0,
+    googleRating: 4.9,
+    reviewCount: 239,
     ratingSource: "Google Reviews",
-    wheelchairAccessible: true
+    lgbtqFriendly: true,
+    womenOwned: true
   },
 
   // Clinic Hours & Schedule
   hours: {
-    sunday: "Opens 10:00 AM – Closes ~8:00 PM",
+    sunday: "[CONFIRM WITH CLINIC — Weekly schedule]",
     monday: "[CONFIRM WITH CLINIC — Weekly schedule]",
     tuesday: "[CONFIRM WITH CLINIC — Weekly schedule]",
     wednesday: "[CONFIRM WITH CLINIC — Weekly schedule]",
@@ -56,99 +59,103 @@ const CLINIC_CONFIG = {
     scheduleNote: "[CONFIRM WITH CLINIC — Full weekly opening & closing schedule to be verified with clinic administration.]"
   },
 
-  // Confirmed Services (Derived exclusively from verified patient reviews)
+  // Confirmed Services (Derived exclusively from verified patient reviews & business listing)
   services: [
     {
-      id: "rct-re-rct",
-      title: "Root Canal Treatment (RCT) & Re-RCT",
-      shortDesc: "Painless, precise root canal procedures and re-treatments designed to save damaged teeth and restore comfort.",
-      fullDesc: "Dr. Siddhartha provides gentle, highly detailed root canal therapy and complex re-RCT procedures. Patients consistently highlight a calm, comfortable atmosphere with zero discomfort during treatment.",
+      id: "rct-capping",
+      title: "Root Canal Treatment (RCT) & Capping",
+      shortDesc: "Painless root canal procedures with effective numbing and properly fitted dental caps to save teeth and relieve pain.",
+      fullDesc: "Dr. Megha Gupta provides gentle and painless root canal therapy with effective numbing, multiple patient check-ins during treatment, clear aftercare instructions, and properly fitted dental caps.",
       patientMentioned: true,
       icon: "tooth-shield"
     },
     {
+      id: "orthodontics-braces",
+      title: "Orthodontics & Braces Specialist Care",
+      shortDesc: "Specialized orthodontic evaluations and braces treatments to align teeth and improve smile esthetics.",
+      fullDesc: "Recognized by patients as a skilled braces specialist and orthodontist in Jhansi, offering expert guidance for tooth alignment and front teeth esthetic work.",
+      patientMentioned: true,
+      icon: "tooth-alignment"
+    },
+    {
       id: "tooth-extraction",
-      title: "Tooth Extraction & Wisdom Tooth Care",
-      shortDesc: "Safe, smooth tooth extractions including complex wisdom tooth procedures performed with patient ease in mind.",
-      fullDesc: "Handled with extreme care, clear pre-procedure explanations, and zero negligence. Patients report smooth recoveries even for complex wisdom tooth removals.",
+      title: "Tooth Extraction & Wisdom Teeth Care",
+      shortDesc: "Smooth, painless extractions of wisdom teeth and relief from toothache using a gentle, expert approach.",
+      fullDesc: "Patients highlight exceptional care, clear explanation of treatment options, and painless wisdom teeth extractions performed with expert treatment skills.",
       patientMentioned: true,
       icon: "tooth-extract"
     },
     {
-      id: "crowns-capping",
-      title: "Dental Crowns & Tooth Capping",
-      shortDesc: "Custom dental capping and crown restorations designed for natural appearance, exact fit, and long-lasting durability.",
-      fullDesc: "High-precision capping services following root canal or structural tooth repair. Patients note exceptional attention to detail and comfortable fit.",
-      patientMentioned: true,
-      icon: "crown"
-    },
-    {
-      id: "consultation-hygiene",
-      title: "General Consultations & Oral Hygiene Care",
-      shortDesc: "Comprehensive oral health checkups, transparent problem explanations, and personalized cleaning and flossing guidance.",
-      fullDesc: "Dr. Siddhartha takes the time to thoroughly explain dental issues and discuss all potential treatment options before any work begins, alongside practical briefing on oral hygiene habits.",
+      id: "checkup-consultation",
+      title: "Free Dental Checkup & Consultations",
+      shortDesc: "Free dental checkups, supportive advice, and gentle examination to maintain optimal oral health.",
+      fullDesc: "Comprehensive oral evaluation with a gentle approach, supportive doctor consultation, and transparent explanation of all recommended procedures.",
       patientMentioned: true,
       icon: "clipboard-check"
+    },
+    {
+      id: "esthetic-front-teeth",
+      title: "Esthetic & Front Teeth Work",
+      shortDesc: "Meticulous esthetic dental treatments and front teeth restoration for a natural, confident smile.",
+      fullDesc: "Carefully executed esthetic dental care focusing on front teeth restoration and cosmetic alignment.",
+      patientMentioned: true,
+      icon: "sparkles"
     }
   ],
+  servicesNote: "[CONFIRM FULL SERVICE LIST WITH CLINIC — this list reflects only what patients have described].",
 
-  // Verified Google Patient Reviews (Exact review text & pull-quotes)
+  // Verified Google Patient Reviews (Exact review text & pull-quotes verbatim)
   reviews: [
     {
       id: 1,
+      author: "Shivam Kushwaha",
       rating: 5,
-      pullQuote: "Completely painless, zero negligence",
-      text: "I had two procedures done at this clinic - wisdom tooth extraction and re-RCT for one tooth. I was extremely anxious about both but Dr. Siddharth made me feel calm and comfortable throughout the entire process. Both procedures were completely painless and his professionalism, transparency and attention to detail were truly impressive. He handled everything with great care and zero negligence. Highly recommended to anyone looking for quality dental treatment.",
+      time: "a month ago",
+      pullQuote: "Painless root canal treatment done by dr Megha Gupta Mam..cap is fitted properly..",
+      text: "Come for root canal treatment of my teeth.. painless root canal treatment done by dr Megha Gupta Mam..cap is fitted properly.. highly recommended dentist & orthodontist in Jhansi as well as whole bundelkhand.",
       source: "Verified Google Review"
     },
     {
       id: 2,
+      author: "Rahnuma Khan",
       rating: 5,
-      pullQuote: "Well equipped with the latest technology",
-      text: "He is very professional to his work, extremely soft spoken. Clinic is very well equipped with all latest technology. His understanding is very clear and suggests best suitable solution to his patients.",
+      time: "3 months ago",
+      pullQuote: "Numbing was effective. I felt no pain during the procedure.",
+      text: "I was really anxious about my root canal.but Dr megha Gupta made it easy.Numbing was effective. I felt no pain during the procedure. They checked in on me multiple times. Got clear instructions for aftercare. Healing well now. Thankyou Dr megha Gupta best dentist in jhansi highly recommend.....🥹 🙏",
       source: "Verified Google Review"
     },
     {
       id: 3,
+      author: "Abhishek Yadav",
       rating: 5,
-      pullQuote: "You are in safe hands",
-      text: "Best dental clinic in jhansi. The doctor is a perfectionist in his field, highly qualified and professional and the same time compassionate. He always insures that a procedure is done exactly right. Highly recommended to anyone who has a trouble with his mouth. You are in safe hands. Best part is that the environment of the clinic is not only hygienic but also cordial and friendly.",
-      source: "Verified Google Review"
-    },
-    {
-      id: 4,
-      rating: 5,
-      pullQuote: "No discomfort during the entire procedure",
-      text: "He is an extremely soft spoken, super polite and friendly doctor. The overall experience has been extremely pleasant, and I am certain that you are in good hands for all of your dental care requirements. I needed either a root canal or tooth extracted. Before beginning treatment, Dr. Siddharth discussed my dental issue to me, including all potential solutions. I experienced no discomfort or pain during the entire procedure of RCT and capping. He also briefed me on proper tooth cleaning and flossing methods.",
+      time: "a year ago",
+      pullQuote: "Extracted my wisdom teeth painlessly... best dentist & dental clinic in Jhansi.",
+      text: "The dentist provided exceptional care with a gentle approach....i visited the clinic for toothache.mam extracted my wisdom teeth painlessly.I overwhelmed by her expert advice and treatment skills....best dentist & dental clinic in Jhansi.Dr Megha Gupta is very good braces specialist also..thank you mam.",
       source: "Verified Google Review"
     }
   ],
 
-  // Photo Inventory & Site Mapping
+  // Photo Inventory & Site Mapping (Descriptive alt text, no photo reused > 2 times)
   images: {
     hero: {
-      path: "Images/with customer 1.jpg",
-      alt: "Dr. Siddhartha smiling at his consultation desk with a satisfied patient giving a thumbs-up on the dental chair"
+      path: "Images/with happy customer 1.jpg",
+      alt: "Dr. Megha Gupta giving a thumbs-up in a pink hoodie alongside a happy male patient seated in the dental chair"
     },
-    clinicRoom: {
-      path: "Images/setup 1.jpg",
-      alt: "Clean, modern treatment room at Dr Siddhartha's Dental Care featuring blue dental chair and consultation desk"
+    doctorProfile: {
+      path: "Images/herself.jpg",
+      alt: "Dr. Megha Gupta in a white coat with stethoscope sitting next to a mint green dental chair in her clinic"
     },
     operating: {
-      path: "Images/with customer 2, operating.jpg",
-      alt: "Dr. Siddhartha performing dental care procedure on a patient under surgical light"
+      path: "Images/in operation.jpg",
+      alt: "Dr. Megha Gupta in blue surgical attire performing a dental procedure on a patient supported by an assistant"
     },
-    doctorPatient: {
-      path: "Images/with customer 3 happy customer.jpg",
-      alt: "Dr. Siddhartha in surgical mask beside a smiling patient resting comfortably after treatment"
+    clinicEnv: {
+      path: "Images/with happy customer 2.jpg",
+      alt: "Dr. Megha Gupta in teal outfit giving a thumbs-up with a satisfied male patient showing a lab card in the clinic"
     },
-    scalingTransform: {
-      path: "Images/teeth transformation 1.jpg",
-      alt: "Clinical before and after photograph of teeth cleaning and dental scaling transformation"
-    },
-    cappingTransform: {
-      path: "Images/teeth transformation 2.jpg",
-      alt: "Clinical before and after photograph showing front tooth gap capping and restoration"
+    patientComfort: {
+      path: "Images/with happy customer 3.jpg",
+      alt: "Dr. Megha Gupta in a green patterned shirt giving a thumbs-up beside a smiling patient resting on the dental chair"
     }
   }
 };

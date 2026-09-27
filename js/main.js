@@ -1,5 +1,5 @@
 /**
- * DR SIDDHARTHA'S DENTAL CARE - MAIN APPLICATION LOGIC
+ * DR MEGHA GUPTA DENTIST - MAIN APPLICATION LOGIC
  * Handles mobile drawer navigation, form handling, active state management,
  * and accessibility interactions.
  */
