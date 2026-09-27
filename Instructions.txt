@@ -39,3 +39,5 @@ Update the configdata file, page titles, meta descriptions, JSON-LD schema (name
 Initialize a git repository in this folder if one doesn't exist, and publish it to a NEW, dedicated, private GitHub repository under my connected account named [repo-name, e.g. dr-name-clinic-demo]. Do not add this project as a folder inside any existing repository — it must be its own standalone repo.
 
 Stop after building and list (a) every [PLACEHOLDER][CONFIRM] item still open, (b) where each photo ended up, and (c) the new repository namelink.
+
+Also give the local host link.
