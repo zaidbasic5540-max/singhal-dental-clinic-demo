@@ -35,9 +35,17 @@ List only servicesprocedures actually mentioned in the reviews or the business l
 ## UPDATE EVERYWHERE
 Update the configdata file, page titles, meta descriptions, JSON-LD schema (name, address, phone, aggregateRating — no invented geo-coordinates), and the About page story to match this clinic specifically. Keep the Sample design, not the official website footer note and noindex meta tag as-is.
 
-## VERSION CONTROL
-Initialize a git repository in this folder if one doesn't exist, and publish it to a NEW, dedicated, private GitHub repository under my connected account named [repo-name, e.g. dr-name-clinic-demo]. Do not add this project as a folder inside any existing repository — it must be its own standalone repo.
+## VERSION CONTROL & REPOSITORY CREATION
+Because this project folder is copied from an existing working template, the git remote initially points to the old template repository. You MUST automatically create a NEW standalone GitHub repository and push to it without requiring manual browser interaction:
+1. Obtain the user's GitHub access credentials/token via stored credentials (`echo "protocol=https`nhost=github.com`n" | git credential fill` or `$env:GITHUB_TOKEN`).
+2. Create the new dedicated repository via GitHub REST API:
+   `POST https://api.github.com/user/repos` with payload `{"name": "[repo-name, e.g. clinic-demo]", "private": false}`.
+3. Re-link the local git remote to the new repository URL:
+   `git remote set-url origin https://github.com/[username]/[repo-name].git`
+4. Stage, commit, and push all updated files to the new repository:
+   `git push -u origin main`
+5. Do NOT push to the copied template repository or add this project inside an existing repository.
 
-Stop after building and list (a) every [PLACEHOLDER][CONFIRM] item still open, (b) where each photo ended up, and (c) the new repository namelink.
+Stop after building and list (a) every [PLACEHOLDER][CONFIRM] item still open, (b) where each photo ended up, and (c) the new repository name/link.
 
 Also give the local host link.
