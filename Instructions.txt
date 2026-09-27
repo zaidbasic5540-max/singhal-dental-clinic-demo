@@ -1,0 +1,41 @@
+This folder was copied from an existing working website template. DO NOT redesign, restructure, or rewrite the visual design, layout, colors, fonts, or page structure — reuse everything exactly as it already exists in this codebase. Your only job is to update the business data, reviews, services, and photos so the site matches this new business.
+
+## SCOPE — READ FIRST
+Work only inside this folder [FULL FOLDER PATH, e.g. BWebsitesWebsite foldersIndiaDr [Name]'s Clinic]. Do not read, reference, or pull any information, images, or content from any sibling folder — every other clinic's data must stay completely separate from this one.
+
+## BUSINESS DETAILS (from the attached Google Maps screenshot — use exactly, do not invent anything else)
+- Name [CLINIC NAME]
+- Type [e.g. Dental clinic  General physician  etc.]
+- Address [ADDRESS FROM SCREENSHOT]
+- Phone [PHONE FROM SCREENSHOT]
+- Google rating [RATING] stars from [REVIEW COUNT] reviews
+- Hours [WHATEVER IS SHOWN — mark anything unconfirmed as CONFIRM WITH CLINIC]
+- Accessibilityother listed details [ANYTHING ELSE SHOWN ON THE LISTING]
+- Do NOT invent the doctor's degrees, years of experience, equipment brands, insurance accepted, specific procedures not mentioned below, or any statistic. This is a healthcare business — incorrect claims matter more here than for a typical local business. Anything not given to you or not stated in a review is a [PLACEHOLDER].
+
+## PHOTOS
+Real photos are in this folder's Images subfolder. They are unsorted and unlabeled. For each photo
+1. Actually look at what it shows before deciding where it goes — do not guess from filename.
+2. Place based on content exteriorsignage → Contact page or footer; waiting roomreception → Home hero or About; treatment roomequipment → Services or Home; a photo that looks like the doctor → About page; close-ups of the actual work → Services page.
+3. Write accurate alt text describing what is actually in that specific photo.
+4. Never reuse the same photo more than twice across the site.
+5. If a section has no suitable real photo, use a clearly labeled [Photo coming soon] placeholder instead of stretching an unrelated one. Never generate or substitute an AI-generated or stock image anywhere.
+
+## REVIEWS
+Replace the existing review cards with these, verbatim, exactly as written below. Do not edit, shorten, or paraphrase the review text itself. For each one, write a short pull-quote using only that review's own wording.
+
+[PASTE REVIEW 1]
+[PASTE REVIEW 2]
+[PASTE REVIEW 3]
+[PASTE REVIEW 4 — etc.]
+
+## SERVICES
+List only servicesprocedures actually mentioned in the reviews or the business listing above. Add a closing note [This list reflects only what patients have described]. Do not add anything beyond what's confirmed.
+
+## UPDATE EVERYWHERE
+Update the configdata file, page titles, meta descriptions, JSON-LD schema (name, address, phone, aggregateRating — no invented geo-coordinates), and the About page story to match this clinic specifically. Keep the Sample design, not the official website footer note and noindex meta tag as-is.
+
+## VERSION CONTROL
+Initialize a git repository in this folder if one doesn't exist, and publish it to a NEW, dedicated, private GitHub repository under my connected account named [repo-name, e.g. dr-name-clinic-demo]. Do not add this project as a folder inside any existing repository — it must be its own standalone repo.
+
+Stop after building and list (a) every [PLACEHOLDER][CONFIRM] item still open, (b) where each photo ended up, and (c) the new repository namelink.

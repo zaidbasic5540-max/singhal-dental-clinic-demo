@@ -1,5 +1,5 @@
 /**
- * DR MEGHA GUPTA DENTIST - MAIN APPLICATION LOGIC
+ * SINGHAL DENTAL CLINIC AND IMPLANT CENTRE - MAIN APPLICATION LOGIC
  * Handles mobile drawer navigation, form handling, active state management,
  * and accessibility interactions.
  */
